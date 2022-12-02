@@ -6,4 +6,14 @@ def main(list1):
     Returns:
         list: return answer
     """
-    return
+    x = 0
+    y = 0
+    z = 0
+    while x < len(list1):
+        if list1[x] == 1:
+            y += 1
+        else:
+            z += 1
+        x += 1
+    return [y, z]
+print(main([0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1]))
